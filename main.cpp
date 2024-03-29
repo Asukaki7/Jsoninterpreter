@@ -190,9 +190,10 @@ struct PrintNum {
 
 
 int main() {
-    std::string_view str3 = R"JSON([1,2,3])JSON";
+    std::string_view str3 = R"JSON(["asdasd"])JSON";
     auto [obj, eaten] = parse(str3);
     print(obj);
+    std::cout << " 1" << std::endl;
     /* std::cout << std::get<std::string>(parse(str3).first.inner); */
     return 0;
 } 
